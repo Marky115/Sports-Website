@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Product Item Detail</title>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/grid.css"> 
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <!-- NAVIGATION  -->
+        <header>
+          <nav class = "nav-main">
+            <h1>PeakPerformance</h1>
+            <ul class="nav-menu">
+              <li class="nav-item"><a class="button-nav" href="Home.html">Home</a></li>
+              <li class="nav-item"><a class="button-nav" href="ProductPage.html">Shop</a></li>
+              <li class="nav-item"> <a class="button-nav" href="About.html">About</a></li>
+              <li class="nav-item"> <a class="button-nav" href="Checkout.html">Checkout</a></li>
+              <li class="nav-item"><a class="button-nav" href="Contact.html">Contact</a>
+             </li>
+           
+
+            </ul>
+           
+           
+            <div class="hamburger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </div>
+
+          </nav>
+         
+          
+        </header>
+
+        <!-- CONTENT SECTION -->
+        <section class="jersey">
+          <div class="left-side">
+            <div class="jersey-img-container">
+              <img src="Img/jersey1.jpg" alt="Jersey Image front">
+              <div class="detail-image-slide-row">
+                <div class="detail-image-slide-column">
+                  <img src="Img/jersey1view1.jpg" alt="fill out jersey perspective">
+                </div>
+                <div class="detail-image-slide-column">
+                  <img src="Img/jersey1view2.jpg" alt="fill out jersey perspective">
+                </div>
+                <div class="detail-image-slide-column">
+                  <img src="Img/jersey1view3.jpg" alt="fill out jersey perspective">
+                </div>
+              </div>
+            </div>
+          </div>            
+          <div class="jersey-text-container">
+                <h2>Phoenix Suns Jersey</h2>
+                <h3>$79.99</h3>   
+                <p>Unisex Pheonix Sun's Jesey. This style is true to size.</p>
+                <h3>Size</h3>
+                
+                <div class="button-container">
+                    <button class="button button1">S</button>
+                    <button class="button button2">M</button>
+                    <button class="button button3">L</button>
+                    <label for="quantity">Quantity:</label>
+                    <br>
+                    <input type="number" id = "quantity" name="quantity" value="1">
+                    <br>
+                    <button class="button button4" id="addToCart" onclick="changeText()" value="0">Add to cart</button>
+                    <button id="to-checkout" class="button button4" onclick="location.href='Checkout.html'">To Checkout</button>
+                </div>
+            </div>
+        </section>
+
+
+      
+           <!-- FOOTER SECTION -->
+            <footer>
+                <div class="footer-layout">
+                  <h2 class="footer-h2">Stay up to date</h2>
+                  <div class="footer-middle">
+
+                    <input type="email" id="emailInput" name="email" aria-label="Enter email address" placeholder="Enter your email address" required>
+
+                    <a class="button-footer" href="#">Submit</a>
+                </div>
+                  <div class="contact-faq">
+                    <div class="Contact">
+                      <p>Contact Information: <br> PeakPerformance@gmail.com <br> 604-991-6969</p>
+                    </div>
+
+                    <div class="FAQ">
+                      <a href="Contact.html"><p>FAQ</p></a>
+                      <ul>
+                        <li>  <a href = "https://docs.google.com/document/d/14iOjHVJj4CEZE1CuFV5WEqgqJekMm4QiGPQ011kypl4/edit?usp=sharing" target="_blank">
+                          Citations</a></li>
+                        <li><a href="About.html">About US</a></li>
+                        <li><a href="Contact.html">Social Media</a></li>   
+                          
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </footer>
+
+            
+    </body>
+
+</html>

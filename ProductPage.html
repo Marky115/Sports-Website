@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Product Items</title>
+        <meta charset="utf-8">
+        <link href="css/grid.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Roboto:wght@500&family=Teko:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content ="width=device-width, initial-scale=1">
+        
+    </head>
+
+    <body>
+        <!-- NAVIGATION SECTION -->
+        <header>
+            <nav class = "nav-main">
+                <h1>PeakPerformance</h1>
+                <ul class="nav-menu">
+                  <li class="nav-item"><a class="button-nav" href="Home.html">Home</a></li>
+                  <li class="nav-item"> <a class="button-nav" href="About.html">About</a></li>
+                  <li class="nav-item"><a class="button-nav" href="Contact.html">Contact</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="button-nav" href="Checkout.html">Checkout</a>
+                 </li>
+  
+                </ul>
+               
+               
+                <div class="hamburger">
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                </div>
+  
+              </nav>
+          
+        </header>
+
+        <!-- CONTENT SECTION -->
+        <section id="element" class="productPage">
+           <!-- <div class="product-grid-content"> -->
+                <div class="product-sidebar">
+                    <div class="filter-links">
+                        <h2>Shop/All Products</h2>
+                        
+
+                        <label for="sizes"> Sizes</label>
+                        <select id="sizes" name="sizes">
+                          <option value="small"> Small </option>
+                          <option value="medium"> Medium </option>
+                          <option value="large"> Large </option>
+                        </select>
+                 
+                        <label for="colors"> Colors</label>
+                        <select id="colors" name="colors">
+                          <option value="white"> White </option>
+                          <option value="black"> Black </option>
+                          <option value="blue"> Blue </option>
+                          <option value="grey"> Grey </option>
+                        </select>
+
+                        <label for="sort"> Sort</label>
+                        <select id="sort" name="sort">
+                          <option value="Sort by Newest"> Sort by Newest </option>
+                          <option value="Sort by Oldest"> Sort by Oldest </option>
+                          <option value="Sort by Bestselling"> Sort by Cheapest</option>
+
+                        </select>
+                        
+                        <label for="categories"> Categories</label>
+                        <select id="categories" name="categories"> 
+                          <option value="white"> Shorts </option>
+                          <option value="black"> Jerseys </option>
+                          <option value="blue"> Shirts </option>
+                        </select>
+
+                        <form>
+                            <input type="submit" value="Submit" class="filter-butn">
+                        </form>
+                    </div>
+                </div>  
+
+                <div class="product-item-grid"> 
+                    <div class="product-item">
+                        <a href="ProductDetail.html"><img src="Img/jersey1.jpg" alt="Pheonix Suns jersey front and back over purple background"></a>
+                        <p class = "shop-spacing">Phoenix Jersey</p>
+                        <h3>$75.99</h3>
+                    </div>
+                    <div class="product-item">
+                        <a href="ProductDetail.html"> <img src="Img/jersey2.jpg" alt="Miami Heat black jersey, shorts on grey. Link to product page."></a>
+                       
+                        <p class = "shop-spacing">Miami Jersey</p>
+                        <h3>$75.99</h3>
+                    </div>
+                    <div class="product-item">
+                        <a href="ProductDetail.html"> <img src="Img/jersey3.jpg" alt="Warriors black gold jersey. Link to product page"></a>
+                        <p class = "shop-spacing">San Francisco Jersey</p>
+                        <h3>$75.99</h3>
+                    </div>
+
+                    <div class="product-item">
+                        <a href="ProductDetail.html">
+                            <img src="Img/shirt1.jpg" alt="Male model in Hollingsworth green t-shirt. link to product page.">
+                        </a>
+                        
+                        <p class = "shop-spacing">Light Grey Shirt</p>
+                        <h3>$15.99</h3>
+                    </div>
+
+                    <div class="product-item">
+                        <a href="ProductDetail.html">
+                            <img src="Img/shirt2.jpg" alt="male model in mint blue t-shirt/ link to detailed product page">
+                        </a>
+            
+                        <p class = "shop-spacing">Turquoise Shirt</p>
+                        <h3>$15.99</h3>
+                    </div>
+
+                    <div class="product-item">
+                        <a href="ProductDetail.html">
+                            <img src="Img/shirt3.jpg" alt="male model in a grey t-shirt. To product page">
+                            <p class = "shop-spacing">
+                        </a>
+                        <p class = "shop-spacing">Dark Grey Shirt</p>
+                        <h3>$15.99</h3>
+                    </div>
+
+                    <div class="product-item">
+                    
+                        <a href="ProductDetail.html">
+                            <img src="Img/short1.png" alt="blue and white basketball shorts to detailed product page"></a>
+                        <p class = "shop-spacing">White Short</p>
+                        <h3>$17.99</h3>
+                    </div>
+
+                    <div class="product-item"> 
+                        <a href="ProductDetail.html">
+                            <img src="Img/shorts2.jpg" alt="black basketball shorts with birds to detailed prouduct page">
+                        </a>
+                        <p class = "shop-spacing">Black Short</p>
+                        <h3>$17.99</h3> 
+                    </div>
+
+                    <div class="product-item">
+                        <a href="ProductDetail.html"><img src="Img/short4.jpg" alt="white and red basketball shorts with flower to detailed prouduct page"></a>
+                        <p class = "shop-spacing">Grey Short</p>
+                        <h3>$17.99</h3>
+                    
+                    </div>
+
+                    
+
+
+                </div> 
+            <!-- </div> -->
+        
+        
+
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <h2 class="footer-h2">Stay up to date</h2>
+            <div class="footer-middle">
+           
+                <input type="email" id="emailInput" name="email" aria-label="Enter email address" placeholder="Enter your email address" required>
+
+                <a class="button-footer" href="#">Submit</a>
+                
+            </div>
+            <div class="contact-faq">
+                <div class="Contact">
+                    <P>Contact Information: <br> PeakPerformance@gmail.com <br> 604-991-6969</P>
+                </div>
+                
+                <div class="FAQ">
+                    <a href="Contact.html"><p>FAQ</p></a>
+                    <ul>
+                        <li>  <a href = "https://docs.google.com/document/d/14iOjHVJj4CEZE1CuFV5WEqgqJekMm4QiGPQ011kypl4/edit?usp=sharing" target="_blank">
+                        Citations</a></li>
+                        <li><a href="About.html">About US</a></li>
+                        <li><a href="Contact.html">Social Media</a></li>   
+                        
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        
+
+    </body>
+</html>

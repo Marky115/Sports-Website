@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Checkout</title>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/grid.css"> 
+        <link rel="stylesheet" href="css/main.css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald&family=Roboto:wght@500&family=Teko:wght@600&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+       
+        <!-- NAVIGATION SECTION -->
+        <header>
+            <nav class = "nav-main">
+                <h1>PeakPerformance</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="button-nav" href="Home.html">Home</a></li>
+                    <li class="nav-item"><a class="button-nav" href="ProductPage.html">Shop</a></li>
+                    <li class="nav-item"> <a class="button-nav" href="About.html">About</a></li>
+                    <li class="nav-item"><a class="button-nav" href="Contact.html">Contact</a></li>
+                </ul>
+               
+               
+                <div class="hamburger">
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                   <span class="bar"></span>
+                </div>
+    
+            </nav>
+         
+        </header>
+
+        <!-- CONTENT SECTION --> 
+        <section id="checkout-Design" class="checkout">
+            <h1> Checkout </h1>
+            <div class="cart-products">
+                <div class="product-info">
+                    <img src="Img/jersey1.jpg" alt="Phoenix Suns jersey over grey background" class = "checkout-img">
+                </div>
+                <div class="price-info">
+                    <h2 class = "carth">Phoenix Suns Jersey</h2>
+                    <p class = "cartp">Qt1 - $75.99</p>
+                    <label for="quantity">Quantity:
+                        <input type="number" id = "quantity" name="quantity" value="1">
+                    </label>
+                </div>
+            </div>
+            <div class="cart-products">
+                <div class="product-info">
+                <img src="Img/jersey2.jpg" alt="white and blue floral sport pants" class = "checkout-img">
+                
+                </div>
+                <div class="price-info">
+                    <h2 class = "carth">Miami Jersey</h2>
+                    <p class = "cartp">Qt1 - $17.99</p>
+                    <label for="quantity2">Quantity: 
+                        <input type="number" id = "quantity2" name="quantity" value="1">
+                    </label>
+                    
+                </div>
+            
+            </div>
+
+        
+        
+            <div class =checkout-design>
+               <div class="subprice">
+                    <h2> Subtotal:</h2>
+                    <h2>$93.98</h2>
+               </div>
+                
+               <div class="form-h2">
+                    <h2> Contact Information: </h2> 
+               </div>
+                
+                <form action = "#" method = "post">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="checkout-input"required>
+                    <label for="shopping-address"> Shipping Address:</label>
+                    <input type="text" id="shopping-address" name="address"required>
+                    <div class = card-info2>
+                        <div>
+                        <label for="city"> City </label>
+                        <input type="text" id="city" name="city" placeholder="city"required>
+                        </div>
+                        <div>
+                        <label for="province"> Province </label>
+                        <input type="text" id="province" name="province" placeholder="province"required>
+                        </div>
+                        <div>
+                            <label for="postal"> Postal </label>
+                            <input type="text" id="postal" name="postal" placeholder="postal"required>
+                        </div>
+                    </div>
+                    <div class="form-h2">
+                        <h2> Payment Info: </h2>
+                    </div>
+                   
+                    <label for="credit-card"> Credit Card Number: </label>
+                    <input type="text" id="credit-card" name="credit-card" placeholder="0000 0000 0000 0000"required>
+                    <div class = card-info>
+                        <div>
+                        <label for="month-year"> MM/YY </label>
+                        <input type="text" id="month-year" name="month-year" placeholder="MM/YY"required>
+                        </div>
+                        <div>
+                        <label for="CVV"> CVV </label>
+                        <input type="text" id="CVV" name="CVV" placeholder="MM/YY"required>
+                        </div>
+                    </div>
+                    
+                </form>
+
+                <!-- confirmation button -->
+                <form action="Confirmation.html" method="post">
+                    <input type="submit" value="Order" class="submit-btn2">
+                </form>
+                
+            </div>
+        </section>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <h2 class="footer-h2">Stay up to date</h2>
+            <div class="footer-middle">
+           
+                <input type="email" id="emailInput" name="email" aria-label="Enter email address" placeholder="Enter your email address">
+
+                <a class="button-footer" href="#">Submit</a>
+                
+            </div>
+            <div class="contact-faq">
+                <div class="Contact">
+                    <P>Contact Information: <br> PeakPerformance@gmail.com <br> 604-991-6969</P>
+                </div>
+                
+                <div class="FAQ">
+                    <a href="Contact.html"><p>FAQ</p></a>
+                    <ul>
+                        <li>  <a href = "https://docs.google.com/document/d/14iOjHVJj4CEZE1CuFV5WEqgqJekMm4QiGPQ011kypl4/edit?usp=sharing" target="_blank">
+                        Citations</a></li>
+                        <li><a href="About.html">About US</a></li>
+                        <li><a href="Contact.html">Social Media</a></li>   
+                        
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="java.js"></script>
+    </body>
+
+</html>

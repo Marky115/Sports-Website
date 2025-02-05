@@ -1,0 +1,309 @@
+/* navigation */
+/* learn hamburger menu from https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+@media(max-width:38rem){
+  .hamburger{
+      display:block;
+  }
+
+  .nav-main{
+      text-align: center;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  }
+  .nav-menu{
+      position:fixed;
+      left:-110%;
+      top: 4rem;
+      padding:1em;
+      flex-direction: column;
+      background-color: white;
+      width:100%;
+      text-align:center;
+      transition: 0.4s;
+      gap:2em;
+      z-index: 3;
+  }
+
+
+
+  .nav-menu.active{
+      left:-15px;
+      
+  }
+}
+
+
+@media (max-width: 40rem) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1{
+    margin:0.5em;
+  }
+  .nav-main {
+    margin-top: 0.3rem;
+    margin-bottom: .3em;
+    
+  }
+  
+}
+
+@media(max-width:26.5rem){
+  header{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .nav-main{
+    margin-left: 0.2em;
+  }
+
+  header h1{
+    margin-left: 0.4em;
+  }
+}
+
+
+/* Product Page */
+@media (max-width:45rem){
+    .product-item-grid{
+      grid-template-columns: 1fr;
+      align-items: center;
+    } 
+   
+}
+  
+@media (max-width:36rem){
+   
+    .product-item-grid{
+      text-align: center;
+      margin-top: 0;
+      
+    }
+    .productPage{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    
+    .product-sidebar{
+      margin:1.5rem;
+      text-align: center;
+    }
+  
+}
+
+@media (max-width:67rem){
+    .product-item-grid{
+      grid-template-columns: 1fr 1fr;
+      margin-left: 0;
+      gap:0;
+    }
+  
+    .product-sidebar{
+      width:100%;
+    }
+  
+}
+
+/* home page */
+
+@media (max-width:41rem){
+  .product-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .product-home-item{
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:36rem){
+    .filter-links input[type=text], select{
+      width: auto;
+       margin: .6em auto; 
+    }
+} 
+  
+  
+@media (max-width:29.5rem){
+    .product-grid{
+        flex-direction: column;
+        margin: 1em;
+    }
+    .product-home-item{
+        margin:0;
+        margin-bottom: 1em;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product-home-item img{
+        margin: 0;
+    }
+
+
+}
+
+/* Product Detail Page */
+@media (max-width:44rem){
+    .jersey{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      margin:0;
+      max-width: 100%;
+      
+    }
+  
+    .jersey-text-container{
+      text-align: center;
+      margin-bottom: 1.1em;
+      justify-self: center;
+    }
+  
+    .left-side{
+      margin:0;
+      justify-self: center;
+  
+    }
+  
+    .jersey-img-container{
+      margin:0;
+    }
+  
+    
+}
+  
+@media (max-width:30rem){
+    .jersey{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
+/* Contact Page */
+
+@media (max-width:40rem){
+
+    .Contact-design{
+      max-width: 80%;
+    }
+    .contact-form-spacing{
+      width: 100%;
+    }
+  
+    .contact-form-email{
+      width: 100%;
+    }
+} 
+
+/* About Page */
+
+@media (max-width:53.75rem){
+    .about-section{
+      flex-direction: column-reverse;
+      
+    }
+}
+  /* learn from https://www.w3schools.com/css/tryit.asp?filename=trycss_display */
+  /* this changes the image to be bigger since the smaller screen doesn't work well for wide landscape photos */
+  
+@media (max-width:43.75rem){
+    .info-image{
+      display: none;
+    }
+  
+    .about-image2 {
+      display: block;
+      
+    }
+  
+    .about-image2 img{
+      width: 80%;
+      height: auto;
+      margin: 0;
+    }
+  
+   
+}
+  
+@media (max-width:38rem){   /* smaller screens*/
+    .about-text {
+      margin-left:0;
+      padding: 2rem;
+      width: 80%;
+     
+    }
+  
+    .about-text p {
+      width: auto;
+     
+    }
+}
+
+/* Checkout Page */
+@media (max-width:40rem){
+    .checkout{
+      max-width: 80%;
+    }
+  }
+  
+@media (max-width:26rem){
+    .cart-products{
+      gap:1.5em;
+    }
+  
+    .price-info h2{
+      margin-top: auto;
+    }
+}
+
+/* Footer  */
+
+@media (max-width: 41rem) {
+  .footer-layout {
+    flex-direction: column;
+  }
+
+  .contact-faq {
+    text-align: center;
+  }
+}
+
+@media (max-width:28rem) {
+  .footer-layout {
+    flex-direction:row;
+  }
+
+  .contact-faq {
+    /* learn from https://www.w3schools.com/css/css3_flexbox_container.asp */
+    text-align:start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+}
+
+@media(max-width:42rem){
+  .footer-middle{
+    flex-direction: column;
+  }
+
+  .footer-middle input{
+    width:auto;
+  }
+  
+}
+
+/* Confirmation Page */
+
+@media (max-width:29rem){
+  .confirmation{
+    margin: 2rem;
+    padding: 1em;
+  }
+}

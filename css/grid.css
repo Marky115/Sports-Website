@@ -1,0 +1,716 @@
+/* Product Page Design */
+
+.productPage{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  
+}
+
+.product-item{
+  padding:1rem;
+  overflow: hidden;
+
+}
+
+.product-item img{
+
+  object-fit: cover;
+ 
+  width: 90%;
+  height: auto;
+ 
+} 
+
+.product-sidebar{
+  margin: 1.5rem;
+  margin-right: 2rem;
+  width: 60%;
+  
+ 
+  
+}
+
+
+.product-item-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  margin-top: 3rem;
+  
+  gap:0.65rem;
+  
+  
+}
+
+.product-item img:hover{
+  filter: brightness(0.70);
+  cursor: pointer;
+  transform: scale(1.020);
+  transition: 0.2s ease;
+}
+
+ 
+.filter-butn{
+  width:auto;
+  border-radius: 0.25rem;
+  background-color: #2A2F3F;
+  border: 0.125rem solid #2A2F3F;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.filter-butn:hover{
+  background-color: white;
+  color: black;
+  transition: ease-in-out;
+
+}
+
+
+
+/* Home Page Design */
+.banner{
+  margin-top: 0rem;
+  overflow:hidden;
+  position: relative;
+  
+}
+
+.banners{
+  margin-top: 0rem;
+  overflow:hidden;
+  
+  
+  position: relative;
+  
+}
+
+.banner img{
+  height:auto;
+  width: 100%;
+  
+  max-width: 100%; 
+  
+}
+
+.banners img{
+  height:auto;
+  width: 100%; 
+  
+}
+
+
+/* Home page scroller design */
+.media-scroller{
+  display: grid;
+  gap: 2rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  overflow-x: auto;
+  
+}
+
+.media-scroller img{
+  height:auto;
+  max-width: 100%;
+  
+}
+
+.media-element img:hover{
+  filter:brightness(0.75);
+  transform: scale(1.020);
+  
+}
+
+.slider{
+  margin:1rem;
+
+}
+
+/* Video */
+
+.video-framing{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  position: relative;
+ 
+
+}
+
+.product-grid {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:2rem auto;
+  padding:2.5em;
+  gap:1em;
+
+}
+
+.product-home-item{
+  text-align: center;
+  height:auto;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.product-home-item img{
+ 
+  margin-top: 1.5rem;
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  
+}
+
+.butn h3{
+  align-items: center;
+  justify-content: center;
+  border-radius: .3em;
+  border: 0.125rem solid #2A2F3F;
+  background-color: #2A2F3F;
+  color: white;
+  padding: .5em;
+  width: 30%;
+  margin: auto; 
+  margin-bottom: 1em;
+  transition: background-color 0.3s ease;
+  
+}
+
+.butn h3:hover{
+  background-color: white;
+  color: black;
+  
+}
+
+.product-home-item img:hover, .product-home-item img:focus{  /* learn from https://www.w3schools.com/css/css_image_transparency.asp */
+  /* learn filter from https://www.w3schools.com/cssref/css3_pr_filter.php */
+  filter:brightness(0.75);
+  transform: scale(1.020);
+  transition: 0.2s ease-out;
+  overflow: hidden;
+}
+
+/* Product Detail Page Design */
+.jersey {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:1em;
+  margin:2rem;
+  justify-items: center;
+  align-content: center;
+}
+
+.left-side{
+  justify-self: end;
+}
+
+.jersey-text-container{
+  justify-self: start;
+}
+.jersey-img-container{
+  
+  padding:1rem;
+  border-radius: .5em;
+  
+}
+
+.jersey-img-container img{
+  width:21.875rem;
+  max-width: 100%;
+  
+  
+}
+
+.detail-image-slide-row{
+  display: flex;
+  flex-direction: row;
+  padding: 0.31em;
+}
+
+.detail-image-slide-column{
+  width: 6.875rem;
+  padding: 0.2em;
+  justify-items: center;
+}
+
+.jersey-text-container{
+  margin-right:1rem;
+  
+} 
+
+.button-container {   /* reference from https://www.w3schools.com/css/css3_buttons.asp */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
+}
+.button{
+  margin: 0.5em;
+  padding: 0.6em 0.6em;
+  border-radius: 0.4em;
+  background-color:white;
+  border: 0.125rem solid #2A2F3F;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  
+  
+}
+
+
+.button1{
+  width: 25%;
+  margin: 0;
+}
+
+.button1:hover {
+  background-color: #2A2F3F;
+  color: white;
+  transition:ease-in-out;
+}
+
+
+.button1:focus{   /* learn from https://stackoverflow.com/questions/31178653/how-to-keep-active-css-style-after-click-a-button */
+  background-color: #2A2F3F;
+  color: white;
+}
+
+.button2{
+  width: 25%;
+}
+
+.button2:focus{
+  background-color: #2A2F3F;
+  color: white;
+}
+
+.button2:hover {
+  background-color: #2A2F3F;
+  color: white;
+  transition:ease-in-out;
+}
+
+.button3{
+  width: 25%;
+}
+
+.button3:focus{
+  background-color: #2A2F3F;
+  color: white;
+}
+
+.button3:hover {
+  background-color: #2A2F3F;
+  color: white;
+  transition:ease-in-out;
+}
+
+.button4{
+  padding:1em;
+  margin:0;
+  
+
+}
+
+
+.button4:hover {
+  background-color: #2A2F3F;
+  color: white;
+  transition:ease-in-out;
+}
+
+
+/* Contact Page Design */
+
+.Contact-design{
+  border:0.125rem solid #2A2F3F;
+  margin: 2rem auto;
+  padding: 1.3rem;
+  display: block;
+  background-color: white;
+  
+  max-width: 50%;
+  
+}
+
+.spacing{
+  margin-left: 1.5rem;
+  margin-bottom:1.6em;
+  margin-top: 2em;
+  
+  }
+
+ 
+.contact-form-spacing{
+    margin-left: 1.5rem;
+    width: 50%
+    
+}
+
+.contact-form-message{
+  margin-left: 1.5rem;
+  
+  width: 70%;
+  
+    
+}
+
+.commentArea {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  width: 100%;  
+  font-size: 1rem;
+  line-height: 1rem;
+  height: 5rem;
+  font-family: "Montserrat";
+  margin-bottom: 1em;
+} 
+
+.contact-form-email{
+  margin-left: 1.5rem;
+  
+  width: 70%; 
+  font-family: "Montserrat";
+}
+
+
+.contact-bar-spacing{
+    margin-top: 1rem;
+}
+
+.contact-form-spacing input{
+    
+    border-radius: 0.25rem;
+    border: grey 0.125rem solid;
+    
+  }
+
+.contact-form-email input{
+  border-radius: 0.25rem;
+  border: grey 0.125rem solid;
+  
+}
+
+  
+
+.contact{
+  margin: 0;
+  
+}
+
+
+.submit-btn {   
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Montserrat";
+  background-color:#2A2F3F;
+  border:0.125rem solid #2A2F3F;
+  margin-left: 1.5rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ 
+  
+}
+
+.submit-btn:hover {  /* learn from https://stackoverflow.com/questions/31178653/how-to-keep-active-css-style-after-click-a-button */
+  color:black;
+  background-color: white;   
+  
+
+}
+
+
+input.submit-btn {
+  width: auto;
+  
+}
+
+
+
+.fontsize{
+  font-size: 1rem;
+  margin-left: 0.1rem;
+  font-family: "Montserrat"; 
+  
+  
+}
+
+.spacing h1{
+  font-size: 1.8rem;     /* for the header for need help  */
+  margin-bottom:0.8em;
+  font-family: "Teko"; 
+}
+
+
+ .spacing p{         /* for the paragraph  */
+  margin-top:.5em;
+  margin-bottom: 3em;
+  max-width: 35rem;
+  margin-right: 1.2em;
+
+}
+
+
+
+
+
+
+
+/* Checkout Page design */
+form {
+ margin-top: 0em;  
+}
+
+.checkout{
+  display: block;
+ 
+  max-width: 37rem; 
+  margin: 2rem auto;
+  padding: 1.3rem;
+  background-color: #fff;
+  border:0.125rem solid #2A2F3F;
+  
+  /* https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
+  padding-right: 1.25rem;
+}
+
+.checkout h1{
+  font-size: 2.2rem;
+  border-bottom: black solid 0.15rem;
+}
+
+.checkout-total{
+  margin-top: 2em;
+  border-top: black solid 0.15rem;
+  
+}
+
+.subprice h2{
+  display:inline-block;
+  margin-right: 0.2em;
+  font-size: 1.6rem;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.cart-products{
+  display: flex;
+  flex-direction: row;
+  gap:3em;
+  margin-bottom: 1em;
+  border-bottom: black solid 0.15rem;
+  padding-bottom: 1em;
+}
+
+.price-info h2{
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+.price-info p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.price-info input{
+  max-width: 3.5rem;
+    width: 100%;
+    display: inline-block; 
+    border-radius: 0.3rem;
+}
+
+.price-info input:hover{
+  background-color: #e1dfdf;
+}
+
+
+
+.checkout img{
+  width: 9.375rem;
+}
+
+.checkout-p{
+  margin-left: 0rem;
+ 
+}
+
+.checkout-design input[type="text"]{
+    width: 80%;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem 0;
+    display: block;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+  
+}
+
+.checkout-design input[type="text"]:focus {
+  border: 0.125rem solid black;
+  
+}
+/* card infor stuff  */
+.form-h2 h2{
+  border-bottom: black solid 0.10em;
+  
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  width:79.1%
+}
+
+.card-info2{
+  display: flex;
+  justify-content: space-between;
+  width:70%;
+}
+
+.submit-btn2{
+  font-family:'Nanum Myeongjo', serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color:#2A2F3F;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border:0.125rem solid #2A2F3F;
+  border-radius: 0.313rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 30%;
+}
+
+.submit-btn2:hover{
+  
+  color:black;
+  background-color: white;    
+ 
+}
+
+
+/* About Us Page */
+
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin:0;
+
+  
+}
+
+.about-image2{
+  display: none;
+}
+
+.about-image img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 100%; */
+  height: 100%; 
+  object-fit: cover;
+  
+ }  
+
+.about-text{
+  width: 65%;
+  margin-left: 3.5rem;
+  padding:2rem;
+  font-size: 1.25rem;
+  
+}
+
+.about-text p{
+  width: 75%;
+  font-size:large;
+}
+
+
+
+.about-info{
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.about-info p{
+  width: 60%;
+  text-align: left;
+  margin: 3rem auto 3rem;
+  font-size: large;
+  
+  
+}
+
+.about-info h1{
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-left:auto;
+  margin-right: auto;
+  
+}
+
+.info-image img{
+  width: 100%;
+  height: 60%;
+  max-width: 100%;
+} 
+
+/* Confirmation page */
+
+.confirmation{
+  
+  margin: 4rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  border: 0.125rem solid #2A2F3F;
+  padding: 2em;
+}
+
+.confirmation p{
+  margin-bottom: 4rem;
+ 
+}
+
+
+.back-butn{
+  border-radius: .3em;
+  border: 0.125rem solid #2A2F3F;
+  background-color: #2A2F3F;
+  color: white;
+  padding: .5em;
+  transition: background-color 0.3s ease;
+  font-family: "Montserrat";
+  font-weight: bold;
+
+}
+
+.back-butn:hover{
+  border: 0.125rem solid #2A2F3F;
+  background-color: white;
+  color: black;
+
+}
+
+
+.confirmation-img{
+  width:100%;
+  height:auto;
+}
+
+.back{
+  margin-bottom: 5rem;
+}

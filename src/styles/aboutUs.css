@@ -1,0 +1,87 @@
+
+
+.about-section {
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  align-items: stretch; 
+  margin: 0;
+  padding: 0;
+ 
+} 
+
+
+.about-text {
+  padding: 4rem 5% 4rem 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+} 
+
+
+.about-text h2 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 0 0 1rem 0; /* Reset margins, add bottom margin */
+}
+
+/* Add top margin specifically to the second heading */
+.about-text h2:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+/* Paragraph Styling */
+.about-text p {
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 0 0 1.5rem 0; /* Reset margins, add bottom margin */
+}
+
+
+.about-image {
+  width: 100%;
+  height: 100%; 
+  display: flex;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 0; 
+}
+
+.about-image picture {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* --- Responsiveness (Tablet & Mobile) --- */
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr; /* Stack columns vertically on mobile */
+  }
+  
+  .about-text {
+    padding: 2.5rem; /* Reduce padding on mobile */
+    justify-content: flex-start; /* Stack text from the top on mobile */
+  }
+  
+  .about-image {
+    order: -1; /* Place image above text on mobile for better flow */
+    height: 300px; /* Give the image a specific height on mobile, acting like a banner */
+  }
+}

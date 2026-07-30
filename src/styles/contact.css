@@ -1,0 +1,124 @@
+.Contact-design {
+  --color-black: #000000;
+  --color-text-dark: #313638;
+  --color-divider: #e4e4e4;
+  --font-display: "Red Hat Display", sans-serif;
+  --font-body: "Red Hat Text", sans-serif;
+
+  max-width: 640px;
+  margin: 2rem auto 0;
+  padding: 80px 24px 120px;
+  background: #ffffff;
+}
+
+/* ==========================================================================
+   Intro heading + paragraph
+   ========================================================================== */
+.spacing {
+  margin-bottom: 48px;
+}
+
+.spacing h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  color: var(--color-black);
+  margin: 0 0 16px;
+}
+
+.spacing p,
+.contact {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Form fields
+   ========================================================================== */
+.Contact-design label {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+  margin: 20px 0 8px;
+}
+
+.inputForm {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--color-black);
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-black);
+}
+
+.inputForm:focus {
+  outline: none;
+  background: #f7f7f7;
+}
+
+.commentArea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--color-black);
+  border-radius: 0;
+  min-height: 140px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-black);
+  resize: vertical;
+}
+
+.commentArea:focus {
+  outline: none;
+  background: #f7f7f7;
+}
+
+/* ==========================================================================
+   Submit button
+   ========================================================================== */
+.Contact-design form {
+  margin-top: 32px;
+}
+
+.Contact-design .submit-btn {
+  box-sizing: border-box;
+  padding: 14px 32px;
+  border: 1px solid var(--color-black);
+  background: var(--color-black);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.Contact-design .submit-btn:hover {
+  background: #ffffff;
+  color: var(--color-black);
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 600px) {
+  .Contact-design {
+    padding: 50px 20px 80px;
+  }
+
+  .spacing h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

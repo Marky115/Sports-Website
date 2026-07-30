@@ -1,0 +1,200 @@
+.checkout {
+  --color-black: #000000;
+  --color-text-dark: #313638;
+  --color-divider: #e4e4e4;
+  --font-display: "Red Hat Display", sans-serif;
+  --font-body: "Red Hat Text", sans-serif;
+
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 60px 24px 100px;
+  background: #ffffff;
+}
+
+.checkout h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--color-black);
+  margin: 0 0 40px;
+}
+
+/* ==========================================================================
+   Cart product rows
+   ========================================================================== */
+.cart-products {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.product-info {
+  flex-shrink: 0;
+}
+
+.checkout-img {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.price-info {
+  flex: 1;
+}
+
+.carth {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: var(--color-black);
+  margin: 0 0 8px;
+}
+
+.cartp {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color-text-dark);
+  margin: 0 0 12px;
+}
+
+.price-info label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.price-info input[type="number"] {
+  width: 56px;
+  padding: 6px 8px;
+  border: 1px solid var(--color-black);
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+/* ==========================================================================
+   Subtotal + form section
+   ========================================================================== */
+.checkout-design {
+  margin-top: 40px;
+}
+
+.subprice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  border-bottom: 2px solid var(--color-black);
+}
+
+.subprice h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--color-black);
+  margin: 0;
+}
+
+.form-h2 h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-black);
+  margin: 32px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.checkout label {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+  margin: 16px 0 6px;
+}
+
+.checkout input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--color-black);
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-black);
+}
+
+.checkout input[type="text"]:focus {
+  outline: none;
+  background: #f7f7f7;
+}
+
+.card-info2,
+.card-info {
+  display: flex;
+  gap: 16px;
+}
+
+.card-info2 > div,
+.card-info > div {
+  flex: 1;
+}
+
+/* ==========================================================================
+   Submit button
+   ========================================================================== */
+.submit-btn2 {
+  box-sizing: border-box;
+  display: block;
+  width: 220px;
+  margin: 32px 0 0;
+  padding: 14px;
+  border: 1px solid var(--color-black);
+  background: #ffffff;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.09em;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.submit-btn2:hover {
+  background: var(--color-black);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 600px) {
+  .checkout {
+    padding: 40px 20px 60px;
+  }
+
+  .cart-products {
+    flex-direction: column;
+  }
+
+  .card-info2,
+  .card-info {
+    flex-direction: column;
+  }
+}

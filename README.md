@@ -1,5 +1,5 @@
 # Sports Apparel E-Commerce Website
-## https://marky115.github.io/Sports-Apparel-Website/
+
 
 This academic project, PeakPerformance is a modern, responsive e-commerce checkout application built with React, featuring a clean and intuitive user interface for purchasing sports jerseys. This is a responsive static website that works seamlessly across desktop and tablet devices.
 

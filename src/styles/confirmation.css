@@ -131,27 +131,25 @@
 /* ==========================================================================
    Action buttons
    ========================================================================== */
-.action-buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.action-buttons .submit-btn {
+.submit-btn {
   box-sizing: border-box;
-  padding: 14px 32px;
+  display: block;
+  width: 220px;
+  margin: 32px 0 0;
+  padding: 14px;
   border: 1px solid var(--color-black);
-  background: var(--color-black);
+  background: #ffffff;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.09em;
-  color: #ffffff;
+  color: var(--color-black);
   cursor: pointer;
 }
 
-.action-buttons .submit-btn:hover {
-  background: #ffffff;
-  color: var(--color-black);
+.submit-btn:hover {
+  background: var(--color-black);
+  color: #ffffff;
 }
 
 /* ==========================================================================

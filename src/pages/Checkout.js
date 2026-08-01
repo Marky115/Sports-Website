@@ -139,9 +139,9 @@ const CheckoutPage = () => {
           </form>
 
           {/* Confirmation button */}
-          <form action="Confirmation.html" method="post">
-            <input type="submit" value="Order" className="submit-btn2" />
-          </form>
+          <Link to="/confirmation" className="submit-btn2" style={{ textAlign: 'center', textDecoration: 'none' }}>
+            Order
+          </Link>
       </section>
       <Footer/>
     </>

@@ -135,7 +135,7 @@ h4{
 
 header{
   background-color: white;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  margin-top:1rem;
 }
  
 li{
@@ -193,7 +193,7 @@ header h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3.5rem;
+  gap: 1.5rem;
   transition: transform 0.3s ease-in-out;
 }
  

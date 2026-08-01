@@ -51,13 +51,10 @@ const Confirmation = () => {
                     <h3>Order Summary</h3>
                     <div className="order-items">
                         <div className="order-item">
-                            <span>Phoenix Suns Jersey</span>
-                            <span>$75.99</span>
+                            <span>The Grey Hoodie</span>
+                            <span>$93</span>
                         </div>
-                        <div className="order-item">
-                            <span>Miami Jersey</span>
-                            <span>$17.99</span>
-                        </div>
+                       
                         <div className="order-total">
                             <span>Total</span>
                             <span>$93.98</span>

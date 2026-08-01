@@ -1,87 +1,86 @@
+/* =========================================================
+   Responsive Split Layout for Main Content
+   Replaces all the absolute positioning 
+========================================================= */
 
-
-.about-section {
+.about-main-container {
+  display: flex;
+  flex-direction: row; /* Aligns items side-by-side */
+  min-height: 80vh; 
   width: 100%;
-  display: grid;
+  max-width: 1600px; /* Prevents it from getting too wide on ultrawide monitors */
+  margin: 0 auto;
+  margin-top:4rem;
+  background: #FFFFFF;
+}
 
-  grid-template-columns: 1.5fr 1fr;
-
-  align-items: stretch; 
-  margin: 0;
-  padding: 0;
- 
-} 
-
-
-.about-text {
-  padding: 4rem 5% 4rem 10%;
+/* Left side (Text) */
+.about-text-column {
+  flex: 1; /* Takes up 50% of the container */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
-} 
+  justify-content: center; /* Centers the text vertically */
+  padding: 5% 10%; /* Creates breathing room around the text */
+}
 
+.text-block {
+  margin-bottom: 2.5rem; /* Space between "About Us" and "What We Do" */
+}
 
-.about-text h2 {
+/* Specific typography based on your Figma file */
+.text-block h2 {
   font-family: 'Red Hat Display', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 27px;
   line-height: 36px;
-  letter-spacing: 0.01em;
   color: #000000;
-  margin: 0 0 1rem 0; /* Reset margins, add bottom margin */
+  margin-bottom: 1rem;
 }
 
-/* Add top margin specifically to the second heading */
-.about-text h2:not(:first-child) {
-  margin-top: 2.5rem;
-}
-
-/* Paragraph Styling */
-.about-text p {
+.text-block p {
   font-family: 'Red Hat Text', sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.01em;
   color: #000000;
-  margin: 0 0 1.5rem 0; /* Reset margins, add bottom margin */
+  margin-bottom: 1.25rem;
+  max-width:500px;
 }
 
-
-.about-image {
-  width: 100%;
-  height: 100%; 
+/* Right side (Image) */
+.about-image-column {
+  flex: 1; /* Takes up the other 50% */
   display: flex;
 }
 
-.about-image img {
+.about-image-column img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  border-radius: 0; 
+  object-fit: cover; /* Ensures the image fills the 50% space perfectly without stretching */
+  object-position: center;
 }
 
-.about-image picture {
-  width: 100%;
-  height: 100%;
+/* =========================================================
+   Responsive Breakpoints 
+========================================================= */
+
+/* Adjusts padding for smaller laptops */
+@media (max-width: 1200px) {
+  .about-text-column {
+    padding: 5% 6%;
+  }
 }
 
-
-
-/* --- Responsiveness (Tablet & Mobile) --- */
+/* Stacks layout vertically for tablets/mobile if window gets too small */
 @media (max-width: 900px) {
-  .about-section {
-    grid-template-columns: 1fr; /* Stack columns vertically on mobile */
+  .about-main-container {
+    flex-direction: column; 
   }
   
-  .about-text {
-    padding: 2.5rem; /* Reduce padding on mobile */
-    justify-content: flex-start; /* Stack text from the top on mobile */
-  }
-  
-  .about-image {
-    order: -1; /* Place image above text on mobile for better flow */
-    height: 300px; /* Give the image a specific height on mobile, acting like a banner */
+  .about-image-column {
+    min-height: 500px; /* Gives the image a fixed height when stacked */
   }
 }

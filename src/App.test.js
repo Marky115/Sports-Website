@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('cart drawer flow', () => {
+  beforeEach(() => {
+    window.history.pushState({}, '', '/#/product/miami-jersey');
+  });
+
+  test('opens the cart drawer when add to cart is clicked', () => {
+    render(<App />);
+
+    fireEvent.click(screen.getByRole('button', { name: /add to cart/i }));
+
+    expect(screen.getByText(/your cart/i)).toBeInTheDocument();
+  });
 });

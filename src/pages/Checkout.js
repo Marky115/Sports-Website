@@ -1,10 +1,11 @@
 
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
-import { useState } from 'react';
-
+const imageBase = process.env.PUBLIC_URL || '';
 
 const CheckoutPage = () => {
+  const subtotal = 75.99 + 17.99;
+
   return (
     <>
       {/* NAVIGATION SECTION */}
@@ -35,14 +36,14 @@ const CheckoutPage = () => {
         <div className="cart-products">
           <div className="product-info">
             <img
-              src="../images/jersey1.jpg"
-              alt="Phoenix Suns jersey over grey background"
+              src={`${imageBase}/images/hoodie.avif`}
+              alt="The Grey Hoodie over grey background"
               className="checkout-img"
             />
           </div>
           <div className="price-info">
-            <h2 className="carth">Phoenix Suns Jersey</h2>
-            <p className="cartp">Qt1 - $75.99</p>
+            <h2 className="carth">The Grey Hoodie</h2>
+            <p className="cartp">Qt1 - $80</p>
             <label htmlFor="quantity">
               Quantity:
               <input type="number" id="quantity" name="quantity" defaultValue="1" />
@@ -50,24 +51,7 @@ const CheckoutPage = () => {
           </div>
         </div>
 
-        {/* Second product */}
-        <div className="cart-products">
-          <div className="product-info">
-            <img
-              src="../images/jersey2.jpg"
-              alt="white and blue floral sport pants"
-              className="checkout-img"
-            />
-          </div>
-          <div className="price-info">
-            <h2 className="carth">Miami Jersey</h2>
-            <p className="cartp">Qt1 - $17.99</p>
-            <label htmlFor="quantity2">
-              Quantity:
-              <input type="number" id="quantity2" name="quantity" defaultValue="1" />
-            </label>
-          </div>
-        </div>
+  
 
            <div className="subprice">
             <h2>Subtotal:</h2>
@@ -136,7 +120,6 @@ const CheckoutPage = () => {
           <form action="Confirmation.html" method="post">
             <input type="submit" value="Order" className="submit-btn2" />
           </form>
-        </div>
       </section>
       <Footer/>
     </>

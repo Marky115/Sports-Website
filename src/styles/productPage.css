@@ -88,6 +88,23 @@
   gap: 30px;
 }
 
+.row-quad .product-card {
+  align-items: flex-start;
+}
+
+.row-quad .product-card-image {
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 4 / 3;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.row-quad .product-card-info {
+  width: 100%;
+  max-width: none;
+}
 /* ==========================================================================
    Shared product card styles
    ========================================================================== */

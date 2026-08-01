@@ -1,14 +1,27 @@
-Home-body {
+/* ==========================================================
+   HomePage.css
+   Page-specific styles for HomePage.js
+   Import this directly in HomePage.js:  import './HomePage.css';
+
+   NOTE: main.css has a global rule -> img { width: 18.75rem; height: auto; }
+   That would shrink the banner, product photos, and video down to 300px
+   wide if left alone. Every img selector below is written to be more
+   specific than that rule so it overrides it correctly.
+   ========================================================== */
+
+.Home-body {
   width: 100%;
 }
- 
 
+/* ----------------------------------------------------------
+   Banner (Figma: "banner 1")
+   ---------------------------------------------------------- */
 .banner {
   width: 100%;
   overflow: hidden;
   line-height: 0; /* removes the small gap under inline images */
 }
- 
+
 .banner img {
   width: 100%;
   height: auto;
@@ -16,20 +29,22 @@ Home-body {
   object-fit: cover;
   display: block;
 }
- 
 
+/* ----------------------------------------------------------
+   Slider section (Figma: "New Arrivals" heading + product grid)
+   ---------------------------------------------------------- */
 .slider {
   padding: 3rem 1rem;
   text-align: center;
 }
- 
+
 .slider h2 {
   font-size: clamp(1.75rem, 4vw, 2.625rem); /* scales down from Figma's 42px */
   letter-spacing: 0.04em;
   color: #313638;
   margin-bottom: 2rem;
 }
- 
+
 
 .media-scroller {
   display: flex;
@@ -39,88 +54,58 @@ Home-body {
   scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
 }
- 
+
 .media-element {
   flex: 0 0 auto;
   width: 20rem; /* sized to the actual 385x188 product images, not Figma's placeholder squares */
   scroll-snap-align: center;
   text-align: center;
 }
- 
+
 .media-element img {
   width: 100%;
   height: auto;
   display: block;
 }
- 
+
 .caption {
   margin-top: 0.75rem;
   font-size: 1.1rem;
   letter-spacing: 0.05em;
   color: #313638;
 }
- 
+
 /* View All button (Figma: "Group 2" / Rectangle 4153 / "View All") */
 .view-all-wrapper {
   display: flex;
   justify-content: center;
   margin-top: 2.5rem;
 }
- 
+
 .button-view-all {
   display: inline-block;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #2A2F3F;
   background-color: #2A2F3F;
   color: #FFFFFF;
   font-weight: 600;
   letter-spacing: 0.07em;
   padding: 0.9rem 3rem;
-  border-radius: 0.5rem;
+  border-radius: 0.875rem;
   text-decoration: none;
-  /* Transition for the button itself */
-  transition: border-color 0.35s ease; 
+  transition: background-color 0.3s ease;
 }
 
-/* The white background that slides in */
-.button-view-all::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  background-color: #FFFFFF;
-  transition: width 0.35s ease;
-  transform-origin: left center;
-  z-index: 1; /* Stays under the text */
-  pointer-events: none;
+.button-view-all:hover {
+  background-color: black;
 }
 
-/* Slide the background in on hover */
-.button-view-all:hover::before {
-  width: 100%;
-}
-
-
-.button-view-all span {
-  position: relative;
-  z-index: 2; /* Keeps the text ABOVE the white background */
-  transition: color 0.35s ease; /* Smooth color change */
-}
-
-/* Turn the text dark when hovering over the button */
-.button-view-all:hover span {
-  color: #2A2F3F; 
-}
- 
-
+/* ----------------------------------------------------------
+   Video section (Figma: "image 17" placeholder slot)
+   ---------------------------------------------------------- */
 #video {
   width: 100%;
   line-height: 0;
 }
- 
+
 .video-framing {
   width: 100%;
   height: auto;
@@ -128,5 +113,3 @@ Home-body {
   object-fit: cover;
   display: block;
 }
-
-

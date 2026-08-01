@@ -167,38 +167,57 @@
   color: #ffffff;
 }
 
-
+.item-size-chart-container{
+  grid-column: 1 / -1; 
+  display: flex;
+  flex-direction: row;      /* image and text side by side */
+  align-items: center;      /* vertically centers text next to image */
+  justify-content: center;  /* centers the whole pair horizontally on the page */
+  gap: 40px;
+  
+  width: 100%;
+  margin:0 auto;
+}
  
-.item-size-chart {  
-  grid-column: 1; /* Keeps it restricted to the left column */
-  margin-left: 119px; /* 99px thumbnails + 20px gap to align with the main image */
-  display: flex;  
-  align-items: center; /* Centers the text next to the image vertically */
-  gap: 40px;  
+.item-size-chart-text {
+  max-width: 300px;
+  
 }
 
-.item-size-chart-image {  
-  width: 336px;  
-  height: 288px;  
-  object-fit: contain; /* Prevents the image from being cropped/zoomed */
-  flex-shrink: 0;  
+.item-size-chart-label {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gray, #666); /* the muted teal-grey in your image */
+  margin: 0 0 8px 0;
 }
 
-.item-size-chart-caption {  
-  font-family: var(--font-body);  
-  font-weight: 400;  
-  font-size: 18px;  
-  line-height: 40px;  
-  letter-spacing: 0.07em;  
-  color: var(--color-black);  
-  max-width: 257px;  
-  margin: 0;  
+.item-size-chart-title {
+  font-family: var(--font-heading, serif); /* looks like a serif font, e.g. Georgia/Playfair */
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-black);
+  margin: 0 0 12px 0;
+}
+
+.item-size-chart-description {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: var(--color-gray, #666);
+  margin: 0;
 }
 
 .item-related-styles {
   max-width: 1512px;
   margin: 0 auto;
-  padding: 0 55px 100px 2rem; 
+  padding: 0 55px 100px 2rem;
+  background: white;
 }
 
 .item-related-heading {
@@ -225,6 +244,38 @@
   display: block;
 }
 
+.item-related-details {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; /* Pushes name left, price right */
+  align-items: center; /* Aligns them vertically */
+  width: 100%;
+  margin-top: 0.75rem;
+}
+
+/* The Product Name */
+.item-related-name {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px; 
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  
+  /* These 3 lines prevent long names from wrapping to a second line */
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* The Product Price */
+.item-related-price {
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 16px;
+  color: #555555;
+  margin: 0;
+  margin-left: 1rem; /* Ensures the price never touches the name */
+  white-space: nowrap; /* Keeps the price from wrapping */
+}
 
 @media (max-width: 1100px) {
   .item-page {

@@ -12,9 +12,7 @@
   background: #ffffff;
 }
 
-/* ==========================================================================
-   Page title
-   ========================================================================== */
+
 .shop-all-title {
   font-family: var(--font-display);
   font-style: normal;
@@ -75,9 +73,7 @@
   gap: 30px;
 }
 
-/* ==========================================================================
-   Secondary row: 4-across product row (shoe row in Figma)
-   ========================================================================== */
+
 .row-quad {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -101,9 +97,7 @@
   width: 100%;
   max-width: none;
 }
-/* ==========================================================================
-   Shared product card styles
-   ========================================================================== */
+
 .product-card {
   display: flex;
   flex-direction: column;
@@ -125,9 +119,7 @@
   margin: 2px 0 4px;
   box-sizing: border-box;
 }
-/* ==========================================================================
-   Responsive breakpoints
-   ========================================================================== */
+
 @media (max-width: 1100px) {
   .showcase-grid {
     grid-template-columns: 1fr;

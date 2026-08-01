@@ -8,7 +8,7 @@
   max-width: 700px;
   margin: 2rem auto;
   padding: 60px 24px 100px;
-  background: #ffffff;
+  
 }
 
 .checkout h1 {
@@ -37,15 +37,56 @@
 }
 
 .checkout-img {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 200px;
   object-fit: contain;
+ 
+}
+
+.checkout-input{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid var(--color-black);
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-black);
 }
 
 .price-info {
   flex: 1;
 }
 
+.item-quantity {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  height: 38px;
+  border: 1px solid var(--color-black);
+  padding: 0 12px;
+}
+
+.item-quantity-btn {
+  font-family: var(--font-display);
+  font-size: 16.94px;
+  line-height: 22px;
+  color: var(--color-black);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.item-quantity-value {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: 16.94px;
+  line-height: 22px;
+  color: var(--color-black);
+}
 .carth {
   font-family: var(--font-body);
   font-weight: 600;
@@ -58,6 +99,7 @@
 
 .cartp {
   font-family: var(--font-body);
+  color:grey;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;

@@ -1,10 +1,16 @@
 
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import Footer from '../components/Footer';
+
 const imageBase = process.env.PUBLIC_URL || '';
 
 const CheckoutPage = () => {
+  const [quantity, setQuantity] = useState(1);
   const subtotal = 75.99 + 17.99;
+
+  const decreaseQty = () => setQuantity((q) => Math.max(1, q - 1));
+  const increaseQty = () => setQuantity((q) => q + 1);
 
   return (
     <>
@@ -43,18 +49,34 @@ const CheckoutPage = () => {
           </div>
           <div className="price-info">
             <h2 className="carth">The Grey Hoodie</h2>
-            <p className="cartp">Qt1 - $80</p>
-            <label htmlFor="quantity">
-              Quantity:
-              <input type="number" id="quantity" name="quantity" defaultValue="1" />
-            </label>
+            <p className="cartp">Quantity: {quantity} - $80</p>
+            <div className="item-quantity">
+              <button
+                type="button"
+                className="item-quantity-btn"
+                onClick={decreaseQty}
+                aria-label="Decrease quantity"
+              >
+                −
+              </button>
+              <span className="item-quantity-value">{quantity}</span>
+              <button
+                type="button"
+                className="item-quantity-btn"
+                onClick={increaseQty}
+                aria-label="Increase quantity"
+              >
+                +
+              </button>
+            </div>
+            
           </div>
         </div>
 
   
 
            <div className="subprice">
-            <h2>Subtotal:</h2>
+            <h2>Total:</h2>
             <h2>${subtotal.toFixed(2)}</h2>
           </div>
 

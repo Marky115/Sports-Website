@@ -21,21 +21,25 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/contact">FAQ</Link></li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h3>Contact</h3>
-          <p>peakPerformance@gmail.com<br/>604-123-6978</p>
+            <ul>
+            <p>peakPerformance@gmail.com</p>
+            <p>604-123-6978</p>
+          </ul>
+         
         </div>
 
         <div className="footer-column">
           <h3>My Account</h3>
           <ul>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/signup">Sign up</Link></li>
-            <li><Link to="/orders">Order Tracking</Link></li>
+            <p>Login</p>
+            <p>Sign Up</p>
+            <p>Order Tracking</p>
           </ul>
         </div>
       </div>

@@ -12,7 +12,7 @@ import Item from './pages/Item';
 import Cart from './pages/Cart';
 
 
-import './styles/responsive.css';
+
 import './styles/aboutUs.css';
 import './styles/checkout.css';
 import './styles/homepage.css';

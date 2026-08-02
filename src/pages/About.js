@@ -13,7 +13,7 @@ const About = () => {
         <nav className="nav-main">  
           <h1>PeakPerformance</h1>  
           <ul className="nav-menu">  
-            <li className="nav-item"><Link className="button-nav" to="/Home">Home</Link></li>
+            <li className="nav-item"><Link className="button-nav" to="/">Home</Link></li>
             <li className="nav-item"><Link className="button-nav" to="/shop">Shop</Link></li>  
             <li className="nav-item"><Link className="button-nav" to="/checkout">Checkout</Link></li>  
             <li className="nav-item"><Link className="button-nav" to="/contact">Contact</Link></li>  

@@ -50,9 +50,10 @@ function App() {
         onQuantityChange={handleQuantityChange}
         onRemove={handleRemove}
       />
-
+          
       <Routes>
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />  
+        {/* <Route path="/Home" element={<Home />} /> */}
         <Route path="/shop" element={<ProductPage />} />
         <Route path="/product/:slug" element={<Item onAddToCart={addToCart} />} />
         <Route path="/about" element={<About />} />

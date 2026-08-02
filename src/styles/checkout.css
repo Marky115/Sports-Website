@@ -207,7 +207,7 @@
   width: 220px;
   margin: 32px 0 0;
   padding: 14px;
-  border: 1px solid var(--color-black);
+  border: 2px solid #313638;
   background: #ffffff;
   font-family: var(--font-display);
   font-weight: 600;
@@ -218,7 +218,7 @@
 }
 
 .submit-btn2:hover {
-  background: var(--color-black);
+  background: #313638;
   color: #ffffff;
 }
 

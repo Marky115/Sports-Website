@@ -151,7 +151,7 @@
   box-sizing: border-box;
   width: 171px;
   height: 38px;
-  border: 1px solid var(--color-black);
+  border: 1px solid #313638;
   background: #ffffff;
   font-family: var(--font-display);
   font-weight: 400;
@@ -163,7 +163,7 @@
 }
 
 .item-add-to-cart:hover {
-  background: var(--color-black);
+  background: #2A2F3F;
   color: #ffffff;
 }
 

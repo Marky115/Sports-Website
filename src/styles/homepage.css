@@ -76,27 +76,31 @@
 }
 
 /* View All button (Figma: "Group 2" / Rectangle 4153 / "View All") */
-.view-all-wrapper {
+
+
+.view-all-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 2.5rem;
+  align-items: center;
+  margin:2.5rem 0;
 }
 
-.button-view-all {
-  display: inline-block;
-  background-color: #2A2F3F;
-  color: #FFFFFF;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  padding: 0.9rem 3rem;
-  border-radius: 0.875rem;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+.view-all-button{
+  display:inline-block;
+  padding: 1rem 1.75rem;
+  border: 2px solid #313638;
+  background-color:white;
+  color:black;
+  font-size:20px;
+  text-decoration:none; 
+  
 }
 
-.button-view-all:hover {
-  background-color: black;
+.view-all-button:hover {
+  background-color: #2A2F3F; /* Swaps background to black */
+  color: #ffffff; /* Swaps text to white */
 }
+
 
 /* ----------------------------------------------------------
    Video section (Figma: "image 17" placeholder slot)

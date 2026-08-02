@@ -106,6 +106,9 @@ const HomePage = () => {
                <p className="price-tag">$90</p>
             </div>
           </div>
+          <div className="view-all-wrap">
+            <Link to="/shop" className="view-all-button">View All</Link>
+          </div>
         </section>
       </div>
 

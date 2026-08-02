@@ -52,7 +52,7 @@ const HomePage = () => {
                   src={`${process.env.PUBLIC_URL}/images/shoe_1.avif`}
                   width="385"
                   height="188"
-                  
+                  alt="Ant Shoe 1"
                 />
               </Link>
               <p className="caption">Ant Shoe 1</p>
@@ -64,7 +64,7 @@ const HomePage = () => {
                   src={`${process.env.PUBLIC_URL}/images/shoe_2.avif`}
                   width="385"
                   height="188"
-                  
+                  alt="Ant Shoe 2"
                 />
               </Link>
               <p className="caption">Ant Shoe 2</p>
@@ -76,7 +76,7 @@ const HomePage = () => {
                   src={`${process.env.PUBLIC_URL}/images/shoe_3.avif`}
                   width="385"
                   height="188"
-                 
+                  alt="Ant Shoe 3"
                 />
               </Link>
               <p className="caption">Ant Shoe 3</p>
@@ -88,7 +88,7 @@ const HomePage = () => {
                   src={`${process.env.PUBLIC_URL}/images/shoe_4.avif`}
                   width="385"
                   height="188"
-                  
+                  alt="Ant Shoe 4"
                 />
               </Link>
               <p className="caption">Ant Shoe 4</p>
@@ -100,6 +100,7 @@ const HomePage = () => {
                   src={`${process.env.PUBLIC_URL}/images/shoe_1.avif`}
                   width="385"
                   height="188"
+                  alt="Ant Shoe 1"
                 />
               </Link>
               <p className="caption">Ant Shoe 1</p>
